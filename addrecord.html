@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+
+body {
+    background-image: url("image.jpg");
+    <!-->background-size: 80px 60px;<-->
+   
+}
+</style>
+<script type = "text/JavaScript" src = "studentreg.js">
+    </script>
+</head>
+<body >
+
+<center>
+<h2>  Registration </h2>
+
+<table align="middle">
+<form action="insert.php" action="create.php" method="POST">
+ID Number: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tr><input type="text" name="txtid" id="txtid" value="" required onblur = "getDetails(this.value) "><br> </tr> <br>
+Full Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tr><input type ="text" id="txtname" name="txtname" value="" required ><br><br> </tr>
+CGPA: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tr> <input type="text" id="txtcgpa" name="txtcgpa" value="" required > </tr> <br><br>
+Year:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tr> <input type="text" id="txtyear" required name="txtyear" value=""> </tr><br><br>
+Level of study:<tr> <input type="text" name="txtlevelofstudy" id="txtlevelofstudy" required value=""> </tr> <br><br>
+Department:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tr> <input type="text" name="txtdepartment" required id="txtdepartment" value=""> </tr><br><br>
+
+<tr><input type="submit" value="submit" name="submit"> </tr>
+</body>
+</html>

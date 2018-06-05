@@ -1,0 +1,217 @@
+
+<html>
+
+<head>
+
+	
+<script type = "text/javascript"  src = "game.js" ></script>
+<style>
+
+body {
+background-image : url("image1.jpg");
+}
+h1 { color: green; font-family : "Times New Roman", Times, serif }
+p{ text-align: center ; color: red; font-family : "Times New Roman", Times, serif ;  }
+div#score {
+	
+	color: green;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 3px;
+	position: absolute;
+	left: 720px;
+	top: 507px;
+	text-align: center;
+	vertical-align: middle;
+}
+div#score div {
+	position: absolute;
+	top: 5px;
+	text-align: center;
+	font-size: 18px;
+	left: -56px;
+}
+table#mytable { 
+	width: 100%;
+	table-layout: fixed;
+}
+#mytable td {
+	font-size: 100%; 
+	color: red;
+	text-align: center;
+	vertical-align: middle;
+	}
+    
+textarea#myguess{
+	width: 400px;
+	height: 100px;
+	border: 2px solid #666;
+	background-color: white;
+	margin: 10px; color: black;
+	font-weight: bold; padding: 3px;
+	}
+td.full{
+	background-color:white;
+	font-weight: bold;
+	}
+td.full:hover{
+	background-color: silver;
+	cursor: pointer;
+	}
+td.empty{background-color: orange;
+	}
+
+
+</style>
+
+<script language="javascript">
+
+
+</script>
+
+</head>
+
+
+
+<body backgroung-image ="image1.jpg">
+
+<center>
+  <h1 ><marquee behavior="scroll"   direction="left" ><b ><i> John's Proverb Puzzle Page</i></b></marquee></h1>
+ 
+</center>
+<p> "To play this game, you can reveal no more than
+half of the characters of each proverb before make a guess. The more
+characters you left un-flipped before you make a correct guess, the more
+scores you will be awarded.<br>
+<br>
+<br/>
+Press "NEW GAME" to Start...
+</br>
+<form action = "">
+<center>  <input type = "button"  value = "NEW GAME"  onclick = "generate()" /> <center>
+<br>
+<br>
+<br>
+  <table id="mytable" >
+<tr>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+    	        <td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+  </tr>
+  <tr>
+    	<td onclick="flip(this);"><span>&nbsp;</span></td>
+    	<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+		<td onclick="flip(this);"><span>&nbsp;</span></td>
+<br>
+
+  </tr>
+</table>
+<div style="display: none;"><textarea id="myguess"></textarea></div>
+<div id="score"><div>Score:</div><span>0</span></div>
+</br>	
+<input type="button"  id="guessbutton"  value="Ready to play , then select ---> New Game " />
+<input type="button" id="imdone" value="view "/>
+
+
+</form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style> 
+body {
+    background-image: url("image.jpg");
+    <!-->background-size: 80px 60px;<-->
+   
+}
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: brown;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+   <h1 ><marquee behavior="scroll"   direction="left" ><b ><i> Student Registration Portal</i></b></marquee></h1>
+
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="addrecord.html" target="_blank">Register</a></li> <br><br>
+  <li><a href="Search.html" target="_blank">Search</a></li><br><br>
+   <li><a href="retrieve1.php" target="_blank">Retrieve Info</a></li><br>
+   
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+   <li> &nbsp </li>
+  <li> &nbsp </li>
+   <li> &nbsp </li>
+
+  
+</ul>
+</nav>
+
+<article class="article">
+  <h1> WELCOME</h1>
+  <p> Welcome to the student Registration portal, Here you can add a record , update the existing record, delete the exixting record and search the student using student ID</p>
+  
+</article>
+
+
+</div>
+
+</body>
+</html>
